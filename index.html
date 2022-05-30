@@ -1,0 +1,16 @@
+<html>
+<body>
+<p id="demo"></p>
+<input placeholder="nom" id="nom">
+<button onclick="showName()"> afficher le nom</button>
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+function showName()
+{
+    var n=document.getElementById("nom").value;
+    console.log("nom",n);
+    alert("bienvenu "+n);
+}
+</script>
+</body>
+</html>
