@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo web et js</title>
+<style>
+    h1
+    {
+        color: blue;
+    }
+    #somme
+    {
+        color: brown;
+    }
+    #produit
+    {
+        color: red;
+    }
+    #fact
+    {
+        color: blueviolet;
+    }
+</style>
+
+</head>
+<body>
+<div align="center">
+<h1>Bienvenu</h1>
+<br>
+valeur1: <input id="e1" type="number" min="1" placeholder="valeur1">
+<br>
+valeur2: <input id="e2" type="number" min="1" placeholder="valeur2">
+<br>
+<button  onclick="calculer()">Calculer</button>
+<div id="somme"></div>
+<div id="produit"></div>
+<div id="fact"></div>
+
+
+</div>
+
+</body>
+<script>
+function calculer()
+{
+var v1=document.getElementById("e1").value;
+var v2=document.getElementById("e2").value;
+var s=parseInt(v1)+parseInt(v2);
+var p=parseInt(v1)*parseInt(v2);
+var f=1
+for(var i=2;i<=parseInt(v1);i++)
+{
+    f*=i;
+}
+document.getElementById("somme").innerHTML="la somme des deux entier est "+s;
+document.getElementById("produit").innerHTML="le produit est: "+p;
+document.getElementById("fact").innerHTML="la factoriel de "+v1+" est: "+f;
+//alert(somme);
+
+
+
+}
+
+
+</script>
+</html>
